@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta  name="description" content="My todo App" />
+    <link href="style.css" rel="stylesheet"/>
+    <script src="index.js"></script>
+    <title>My Todo</title>
+    </head>
+    <body>
+    <div class="container">
+   <header>
+     <nav>
+       <div>
+        <p 
+        class="navBranding">
+        My Todo</p>
+      </div>
+        <div 
+        class="headerIcons"
+        onclick="Darkmode()">
+        <span class="icon">&#9790 DarkMode</span>
+        </div>
+      </nav>
+   </header>
+ <br/><br/><br/><br/><br/><br/>
+      <div class="form todo">
+        <p id="clock"></p>
+          <input 
+            type="text" 
+            class="input" 
+            id="input"
+            placeholder="Add new todo..." />
+            <button
+             type="submit" 
+             class="btnlg"
+             onclick="handleSubmit()">
+             AddTodo 
+       </button>
+             <input 
+               type="datetime-local" 
+               id="date">
+               </div>
+             <div id="parent">
+           <h3>Doing..</h3>
+         </div>
+       <div id="done">
+     <h3 class="done">Done</h3>
+   </div>
+ </div>
+ </body>
+</html>
